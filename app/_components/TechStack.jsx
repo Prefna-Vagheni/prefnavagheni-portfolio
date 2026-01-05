@@ -1,4 +1,5 @@
 'use client';
+import { containerVariants } from '@/_utils/animations';
 import { motion } from 'framer-motion';
 import { Cpu, Globe, Database, Layout, Code2, Terminal } from 'lucide-react';
 

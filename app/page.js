@@ -7,26 +7,32 @@ import Divider from '@/_components/Divider';
 
 export default function Page() {
   return (
-    <>
-      <Hero />
+    <main className="flex flex-col w-full overflow-hidden">
+      <section id="engine">
+        <Hero />
+      </section>
+
       <Divider />
 
-      <div id="stack">
+      <section id="stack">
         <TechStack />
-      </div>
+      </section>
+
       <Divider />
 
-      <div id="projects">
+      <section id="projects">
         <ProjectGallery />
-      </div>
+      </section>
+
       <Divider />
 
-      <div id="logs">
+      <section id="logs">
         <LearningLog />
-      </div>
+      </section>
+
       <Divider />
 
       <Contact />
-    </>
+    </main>
   );
 }
