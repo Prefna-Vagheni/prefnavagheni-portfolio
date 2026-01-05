@@ -116,13 +116,13 @@ export default function ProjectGallery() {
 
             {/* Main Image View */}
             <div className="lg:col-span-9 order-1 lg:order-2">
-              <div className="group relative aspect-[16/9] overflow-hidden rounded-2xl bg-card border border-border">
+              <div className="group relative aspect-16/9 overflow-hidden rounded-2xl bg-card border border-border">
                 <img
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale hover:grayscale-0"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-linear-to-t from-background/20 to-transparent pointer-events-none" />
               </div>
             </div>
           </motion.div>
