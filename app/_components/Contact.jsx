@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import {} from 'framer-motion';
 import { Terminal, Send, Github, Linkedin, Twitter } from 'lucide-react';
 
 export default function Contact() {
