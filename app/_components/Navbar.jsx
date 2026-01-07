@@ -9,7 +9,7 @@ export default function Navbar() {
   const [mounted, setMounted] = useState(false);
 
   // Avoid hydration mismatch
-  useEffect(() => setMounted(true), []); //ESLint ignor
+  useEffect(() => setMounted(true), []); //ESLint igno
 
   const navItems = [
     { name: 'Engine', href: '#hero' },
