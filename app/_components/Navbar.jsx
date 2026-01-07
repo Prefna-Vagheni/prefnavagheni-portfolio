@@ -9,7 +9,7 @@ export default function Navbar() {
   const [mounted, setMounted] = useState(false);
 
   // Avoid hydration mismatch
-  useEffect(() => setMounted(true), []); //
+  useEffect(() => setMounted(true), []); //eslint-disable-line
 
   const navItems = [
     { name: 'Engine', href: '#hero' },
