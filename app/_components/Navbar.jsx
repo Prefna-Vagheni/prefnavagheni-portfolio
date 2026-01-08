@@ -61,7 +61,7 @@ export default function Navbar() {
           )}
         </button>
 
-        {/* Mobile Menu Trigger (Conep) */}
+        {/* Mobile Menu Trigger (Conep */}
         <div className="md:hidden flex items-center pr-2">
           <Terminal size={18} className="opacity-60" />
         </div>
