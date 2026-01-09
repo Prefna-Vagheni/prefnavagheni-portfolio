@@ -23,7 +23,7 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* Terminal Boy */}
+        {/* Terminal Bo */}
         <div className="w-full bg-background border border-border rounded-b-xl p-8 md:p-12 shadow-2xl">
           <div className="font-mono text-sm md:text-base space-y-6">
             <div>
