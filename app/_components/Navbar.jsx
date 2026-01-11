@@ -45,7 +45,7 @@ export default function Navbar() {
 
         <div className="h-6 w-px bg-border mx-2 hidden md:block" />
 
-        {/* */}
+        {/**/}
         <button
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
           className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-foreground/5 transition-colors relative"
