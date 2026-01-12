@@ -30,7 +30,7 @@ export default function Navbar() {
           <Command size={20} />
         </div>
 
-        {/* Navigation*/}
+        {/* Navigatio*/}
         <div className="hidden md:flex items-center gap-1 px-4">
           {navItems.map((item) => (
             <a
