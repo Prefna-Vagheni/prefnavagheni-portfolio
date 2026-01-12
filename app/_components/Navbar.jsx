@@ -30,7 +30,7 @@ export default function Navbar() {
           <Command size={20} />
         </div>
 
-        {/* Navigation Links */}
+        {/* Navigation Link */}
         <div className="hidden md:flex items-center gap-1 px-4">
           {navItems.map((item) => (
             <a
@@ -45,7 +45,6 @@ export default function Navbar() {
 
         <div className="h-6 w-px bg-border mx-2 hidden md:block" />
 
-        {}
         <button
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
           className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-foreground/5 transition-colors relative"
