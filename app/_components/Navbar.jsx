@@ -25,7 +25,7 @@ export default function Navbar() {
         animate={{ y: 0, opacity: 1 }}
         className="flex items-center gap-2 p-2 bg-background/60 backdrop-blur-xl border border-border rounded-full shadow-2xl"
       >
-        {/* Logo/*/}
+        {/* Logo*/}
         <div className="flex items-center justify-center w-10 h-10 rounded-full bg-foreground text-background">
           <Command size={20} />
         </div>
