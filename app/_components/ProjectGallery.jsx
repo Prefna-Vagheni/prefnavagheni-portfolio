@@ -62,7 +62,7 @@ export default function ProjectGallery() {
             transition={{ duration: 0.6, ease: 'easeOut' }}
             className="grid grid-cols-1 lg:grid-cols-12 gap-8"
           >
-            {/* Sid*/}
+            {/* Si*/}
             <div className="lg:col-span-3 flex flex-col justify-between py-4 order-2 lg:order-1">
               <div>
                 <div className="font-mono text-xs opacity-40 mb-1">
