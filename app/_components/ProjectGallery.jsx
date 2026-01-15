@@ -113,7 +113,7 @@ export default function ProjectGallery() {
               </div>
             </div>
 
-            {/* Main I*/}
+            {/* Main */}
             <div className="lg:col-span-9 order-1 lg:order-2">
               <div className="group relative aspect-16/9 overflow-hidden rounded-2xl bg-card border border-border">
                 <img
