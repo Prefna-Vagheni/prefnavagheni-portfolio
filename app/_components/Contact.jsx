@@ -58,7 +58,7 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* S */}
+        {/* */}
         <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-end">
           <div>
             <h4 className="text-xs font-mono uppercase tracking-[0.2em] opacity-40 mb-6">
