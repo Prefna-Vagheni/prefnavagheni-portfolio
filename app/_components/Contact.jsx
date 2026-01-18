@@ -11,7 +11,7 @@ export default function Contact() {
       className="px-6 md:px-12 lg:px-24 py-32 border-t border-border bg-card/20"
     >
       <div className="max-w-4xl mx-auto">
-        {/* Terminal Header */}
+        {/* Terminal Heade */}
         <div className="w-full bg-border/40 rounded-t-xl p-3 flex items-center gap-2 border-x border-t border-border">
           <div className="flex gap-1.5">
             <div className="w-2.5 h-2.5 rounded-full bg-red-500/20 border border-red-500/40" />
