@@ -90,7 +90,7 @@ export default function LearningLog() {
                 </p>
               </div>
 
-              {/* Tag */}
+              {/* T */}
               <div className="md:col-span-3 flex flex-wrap gap-2 items-start justify-end md:justify-end">
                 {log.tags.map((tag) => (
                   <span
