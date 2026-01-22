@@ -77,7 +77,7 @@ export default function LearningLog() {
                 </span>
               </div>
 
-              {/* Conte */}
+              {/* Cont */}
               <div className="md:col-span-7">
                 <h3 className="text-xl font-medium mb-2 flex items-center gap-2 group-hover:text-accent transition-colors">
                   {log.topic}
