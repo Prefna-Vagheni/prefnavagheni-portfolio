@@ -1,7 +1,7 @@
 // utils/animations.js
 export const transitions = {
   duration: 0.8,
-  ease: [0.22, 1, 0.36, 1], // Custom "luxu
+  ease: [0.22, 1, 0.36, 1], // Custom "lu
 };
 
 export const containerVariants = {
