@@ -12,19 +12,19 @@ const tech = [
   },
   {
     name: 'Backend',
-    tools: ['Node.js', 'PostgreSQL', 'Prisma'],
+    tools: ['PostgreSQL', 'Prisma'],
     icon: <Database className="w-5 h-5" />,
     size: 'md:col-span-1',
   },
   {
     name: 'Languages',
-    tools: ['TypeScript', 'JavaScript', 'Go'],
+    tools: ['TypeScript', 'JavaScript', ''],
     icon: <Code2 className="w-5 h-5" />,
     size: 'md:col-span-1',
   },
   {
     name: 'Currently Learning',
-    tools: ['System Design', 'Redis', 'Docker'],
+    tools: ['System Design', 'Node Js', 'Docker'],
     icon: <Cpu className="w-5 h-5" />,
     size: 'md:col-span-2',
     highlight: true,

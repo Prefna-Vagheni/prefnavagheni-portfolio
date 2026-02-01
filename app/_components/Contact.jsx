@@ -63,13 +63,22 @@ export default function Contact() {
               Connect_Social
             </h4>
             <div className="flex gap-8">
-              <a href="#" className="hover:text-accent transition-colors">
+              <a
+                href="https://github.com/Prefna-Vagheni"
+                className="hover:text-accent transition-colors"
+              >
                 <Github size={24} />
               </a>
-              <a href="#" className="hover:text-accent transition-colors">
+              <a
+                href="https://www.linkedin.com/in/prefna-vagheni-051115266/"
+                className="hover:text-accent transition-colors"
+              >
                 <Linkedin size={24} />
               </a>
-              <a href="#" className="hover:text-accent transition-colors">
+              <a
+                href="https://x.com/PrefnaV"
+                className="hover:text-accent transition-colors"
+              >
                 <Twitter size={24} />
               </a>
             </div>
