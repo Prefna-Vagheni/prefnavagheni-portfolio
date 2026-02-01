@@ -3,35 +3,48 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Layers } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const projects = [
   {
     id: '01',
     hash: 'sha256:7f8e9a',
-    title: 'Quantum Nexus Dashboard',
+    title: 'Freelancer Analytics Dashboard',
     description:
-      'A real-time data visualization platform focusing on fluid animations and high-throughput data streams.',
+      'A full-stack business intelligence platform designed for software freelancers to centralize project management and financial health. This project replaces fragmented spreadsheets with a unified, data-driven dashboard that offers real-time insights into earnings, expenses, and client performance.',
+    // description:
+    //   'A real-time data visualization platform focusing on fluid animations and high-throughput data streams.',
     backendNote:
       'Built a custom WebSocket provider to handle live data updates with a 40ms latency target.',
-    stack: ['Next.js', 'Redis', 'Framer Motion', 'Socket.io'],
-    link: '#',
-    github: '#',
-    image:
-      'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop', // Placeholder
+    stack: ['React 19', 'Tailwind', 'Tailwind CSS', 'TanStack Query'],
+    // stack: ['Next.js', 'Redis', 'Framer Motion', 'Socket.io'],
+    link: 'https://freelancer-analytics.vercel.app',
+    github: 'https://github.com/Prefna-Vagheni/Freelancer-Analytics',
+    image: '/images/freelancer-bg.png',
+    // image:
+    // 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop', // Placeholder
   },
   {
     id: '02',
     hash: 'sha256:3d2c1b',
-    title: 'Architect CRM',
+    title: 'Lockin Salon Appointment',
     description:
-      'A minimalist CRM for design studios. Focuses on modular interface components and deep database relations.',
+      'A full-stack salon booking platform built with Next.js 15, featuring Google OAuth authentication, Stripe payment integration, and real-time availability management. The application provides separate interfaces for clients to book appointments and administrators to manage services, staff, and bookings.',
     backendNote:
-      'Designed a relational schema in PostgreSQL using Prisma to handle complex project-to-client hierarchies.',
-    stack: ['React', 'PostgreSQL', 'Prisma', 'Tailwind'],
-    link: '#',
-    github: '#',
-    image:
-      'https://images.unsplash.com/photo-1635776062127-d379bfcba9f8?q=80&w=2564&auto=format&fit=crop', // Placeholder
+      'OAuth authentication, payment processing, email notifications, role-based access control, dynamic availability checking, responsive design',
+    stack: [
+      'Next.js',
+      ' React',
+      'Supabase',
+      'NextAuth.js',
+      'Stripe',
+      'Tailwind CSS',
+    ],
+    link: ' https://lockin-sigma.vercel.app ',
+    github: 'https://github.com/Prefna-Vagheni/lockin',
+    image: '/images/lockin-bg.png',
+    // image:
+    //   'https://images.unsplash.com/photo-1635776062127-d379bfcba9f8?q=80&w=2564&auto=format&fit=crop', // Placeholder
   },
 ];
 
@@ -116,13 +129,15 @@ export default function ProjectGallery() {
 
             <div className="lg:col-span-9 order-1 lg:order-2">
               <div className="group relative aspect-video overflow-hidden rounded-2xl bg-card border border-border">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale hover:grayscale-0"
-                  width={500}
-                  height={500}
-                />
+                <Link href={project.link}>
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-700 ease-out will-change-transform group-hover:scale-105 cursor-pointer"
+                    width={500}
+                    height={500}
+                  />
+                </Link>
                 <div className="absolute inset-0 bg-linear-to-t from-background/20 to-transparent pointer-events-none" />
               </div>
             </div>
