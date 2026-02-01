@@ -2,8 +2,22 @@
 import React, { useState } from 'react';
 import { Terminal, Send, Github, Linkedin, Twitter } from 'lucide-react';
 
+import { sendEmail } from '@/actions/email';
+import { toast } from 'react-hot-toast';
+import SubmitButton from './SubmitButton';
+
 export default function Contact() {
   const [email, setEmail] = useState('');
+
+  const handleAction = async (formData) => {
+    const result = await sendEmail(formData);
+    if (result.success) {
+      toast.success('Command executed: Message Sent!');
+      setEmail('');
+    } else {
+      toast.error('Error: Connection failed.');
+    }
+  };
 
   return (
     <section
@@ -22,7 +36,10 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="w-full bg-background border border-border rounded-b-xl p-8 md:p-12 shadow-2xl">
+        <form
+          action={handleAction}
+          className="w-full bg-background border border-border rounded-b-xl p-8 md:p-12 shadow-2xl"
+        >
           <div className="font-mono text-sm md:text-base space-y-6">
             <div>
               <span className="text-accent">guest@portfolio:~$</span>
@@ -30,7 +47,8 @@ export default function Contact() {
             </div>
 
             <div className="text-foreground/60 leading-relaxed">
-              &gt; Searching for available communication channels... <br />
+              &gt; Searching for available communication channels...
+              <br />
               &gt; Found: Email, GitHub, LinkedIn. <br />
               &gt; Status:{' '}
               <span className="text-emerald-500">Ready to collaborate.</span>
@@ -43,19 +61,18 @@ export default function Contact() {
               </label>
               <div className="flex flex-col md:flex-row gap-4">
                 <input
+                  name="senderEmail"
                   type="email"
                   placeholder="name@company.com"
                   className="bg-transparent border-b-2 border-border focus:border-accent outline-none py-2 grow transition-colors font-mono"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                <button className="flex items-center justify-center gap-2 bg-foreground text-background px-8 py-3 rounded-full hover:bg-accent hover:text-white transition-all font-sans font-bold uppercase text-xs tracking-widest">
-                  Send Command <Send size={14} />
-                </button>
+                <SubmitButton />
               </div>
             </div>
           </div>
-        </div>
+        </form>
 
         <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-end">
           <div>
