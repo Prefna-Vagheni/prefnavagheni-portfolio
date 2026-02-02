@@ -102,9 +102,10 @@ export default function Contact() {
           </div>
 
           <div className="text-left md:text-right font-mono text-[10px] opacity-40 leading-loose">
-            DESIGNED & ENGINEERED BY YOUR_NAME <br />
-            BUILT WITH NEXT.JS 14 / TAILWIND / FRAMER MOTION <br />© 2024 ALL
-            RIGHTS RESERVED_
+            DESIGNED & ENGINEERED BY PREFNA VAGHENI
+            <br />
+            BUILT WITH NEXT.JS 14 / TAILWIND / FRAMER MOTION <br />©{' '}
+            {new Date().getFullYear()} ALL RIGHTS RESERVED_
           </div>
         </div>
       </div>

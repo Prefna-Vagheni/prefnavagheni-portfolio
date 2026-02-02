@@ -7,6 +7,7 @@ import Divider from '@/_components/Divider';
 import AboutSection from './_components/AboutSection';
 import ExperienceSection from './_components/ExperienceSection';
 import ResumeDownload from './_components/ResumeDownload';
+import SkillsSection from './_components/SkillsSection';
 
 export default function Page() {
   return (
@@ -34,6 +35,10 @@ export default function Page() {
       <section id="projects">
         <ProjectGallery />
       </section>
+
+      <Divider />
+
+      <SkillsSection />
 
       <Divider />
 

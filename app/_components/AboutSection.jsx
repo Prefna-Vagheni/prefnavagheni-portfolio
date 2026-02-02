@@ -180,7 +180,7 @@ export default function AboutSection() {
           className="mb-20"
         >
           <h3 className="text-3xl font-bold mb-8 text-foreground font-mono flex items-center gap-3">
-            <span className="text-accent">${'//'}</span> Core Values
+            <span className="text-accent">{'//'}</span> Core Values
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
             {values.map((value, index) => {
