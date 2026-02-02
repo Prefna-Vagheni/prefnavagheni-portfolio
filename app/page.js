@@ -6,6 +6,7 @@ import Contact from '@/_components/Contact';
 import Divider from '@/_components/Divider';
 import AboutSection from './_components/AboutSection';
 import ExperienceSection from './_components/ExperienceSection';
+import ResumeDownload from './_components/ResumeDownload';
 
 export default function Page() {
   return (
@@ -13,6 +14,8 @@ export default function Page() {
       <section id="engine">
         <Hero />
       </section>
+
+      <Divider />
 
       <AboutSection />
 
@@ -37,6 +40,10 @@ export default function Page() {
       <section id="logs">
         <LearningLog />
       </section>
+
+      <Divider />
+
+      <ResumeDownload />
 
       <Divider />
 

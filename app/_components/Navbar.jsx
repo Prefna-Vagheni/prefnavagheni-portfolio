@@ -15,6 +15,8 @@ export default function Navbar() {
     { name: 'Engine', href: '#hero' },
     { name: 'About', href: '#about' },
     { name: 'Stack', href: '#stack' },
+    { name: 'Experience', href: '#experience' },
+    { name: 'Resume', href: '#resume' },
     { name: 'Projects', href: '#projects' },
     { name: 'Logs', href: '#logs' },
   ];
