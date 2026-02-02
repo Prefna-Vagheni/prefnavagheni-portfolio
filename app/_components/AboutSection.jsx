@@ -130,10 +130,10 @@ export default function AboutSection() {
                 <span className="px-4 py-2 bg-accent/10 border border-accent/20 rounded-full text-accent text-sm font-mono">
                   Problem Solver
                 </span>
-                <span className="px-4 py-2 bg-accent/10 border border-accent/20 rounded-full text-accent text-sm font-mono">
+                <span className="px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full text-emerald-500 text-sm font-mono">
                   Detail Oriented
                 </span>
-                <span className="px-4 py-2 bg-accent/10 border border-accent/20 rounded-full text-accent text-sm font-mono">
+                <span className="px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full text-blue-500 text-sm font-mono">
                   Fast Learner
                 </span>
               </div>
@@ -194,10 +194,12 @@ export default function AboutSection() {
                   transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
                   className="bg-card border border-border rounded-lg p-6 hover:border-accent/50 transition-all duration-300 group"
                 >
-                  <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Icon className="w-6 h-6 text-accent" />
+                  <div
+                    className={`w-12 h-12 rounded-lg bg-background border border-border text-foreground group-hover:text-accent transition-colors flex items-center justify-center`}
+                  >
+                    <Icon className={`w-6 h-6 `} />
                   </div>
-                  <h4 className="text-xl font-bold mb-2 text-foreground">
+                  <h4 className={`text-xl font-bold mb-2 text-foreground `}>
                     {value.title}
                   </h4>
                   <p className="text-foreground/70 leading-relaxed">

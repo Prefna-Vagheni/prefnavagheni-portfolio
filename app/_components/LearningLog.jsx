@@ -40,7 +40,7 @@ const logs = [
 
 export default function LearningLog() {
   return (
-    <section className="px-6 md:px-12 lg:px-24 py-32 bg-foreground/[0.02]">
+    <section className="px-6 md:px-12 lg:px-24 py-32 bg-foreground/2">
       <div className="max-w-4xl">
         <div className="flex items-center gap-3 mb-12">
           <div className="p-2 bg-accent/10 rounded-full text-accent">
@@ -59,7 +59,7 @@ export default function LearningLog() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="group grid grid-cols-1 md:grid-cols-12 gap-4 py-8 border-b border-border hover:bg-foreground/[0.01] transition-colors cursor-default"
+              className="group grid grid-cols-1 md:grid-cols-12 gap-4 py-8 border-b border-border hover:bg-foreground/1 transition-colors cursor-default"
             >
               {/* Date/Status */}
               <div className="md:col-span-2 flex flex-col gap-1">
@@ -69,8 +69,8 @@ export default function LearningLog() {
                     log.status === 'Mastered'
                       ? 'text-emerald-500'
                       : log.status === 'In Progress'
-                      ? 'text-accent'
-                      : 'text-blue-500'
+                        ? 'text-accent'
+                        : 'text-blue-500'
                   }`}
                 >
                   {log.status}
