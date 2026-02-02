@@ -234,7 +234,7 @@ export default function AboutSection() {
                     {item.year.slice(-2)}
                   </div>
                   {index !== journey.length - 1 && (
-                    <div className="w-0.5 flex-1 bg-gradient-to-b from-border to-transparent mt-2" />
+                    <div className="w-0.5 flex-1 bg-linear-to-b from-border to-transparent mt-2" />
                   )}
                 </div>
                 <div className="flex-1 pb-8">
@@ -243,7 +243,7 @@ export default function AboutSection() {
                       <span className="text-sm font-mono text-accent">
                         {item.year}
                       </span>
-                      <div className="h-px flex-1 bg-gradient-to-r from-border to-transparent" />
+                      <div className="h-px flex-1 bg-linear-to-r from-border to-transparent" />
                     </div>
                     <h4 className="text-xl font-bold mb-2 text-foreground">
                       {item.title}
