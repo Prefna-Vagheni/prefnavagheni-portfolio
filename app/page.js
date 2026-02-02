@@ -4,6 +4,7 @@ import ProjectGallery from '@/_components/ProjectGallery';
 import LearningLog from '@/_components/LearningLog';
 import Contact from '@/_components/Contact';
 import Divider from '@/_components/Divider';
+import AboutSection from './_components/AboutSection';
 
 export default function Page() {
   return (
@@ -11,6 +12,8 @@ export default function Page() {
       <section id="engine">
         <Hero />
       </section>
+
+      <AboutSection />
 
       <Divider />
 
