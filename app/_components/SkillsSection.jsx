@@ -297,7 +297,7 @@ export default function SkillsSection() {
           </div>
         </motion.div>
 
-        {/* Currently Lea */}
+        {/* Currently Le */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
