@@ -187,7 +187,7 @@ export default function ExperienceSection() {
                         key={idx}
                         className="flex items-start gap-2 text-foreground/70 text-sm"
                       >
-                        <TrendingUp className="w-4 h-4 text-accent shrink-0 mt-0.5" />
+                        <TrendingUp className="w-4 h-4 text-foreground shrink-0 mt-0.5" />
                         <span>{achievement}</span>
                       </li>
                     ))}
@@ -206,7 +206,7 @@ export default function ExperienceSection() {
                     {exp.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="px-3 py-1.5 bg-accent/5 border border-accent/20 rounded-md text-accent text-xs font-mono hover:bg-accent/10 transition-colors"
+                        className="px-3 py-1.5 bg-foreground/5 border border-foreground/20 rounded-md text-foreground text-xs font-mono hover:bg-foreground/10 transition-colors"
                       >
                         {tech}
                       </span>
@@ -232,8 +232,8 @@ export default function ExperienceSection() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
               { value: '2+', label: 'Years Experience', icon: Calendar },
-              { value: '15+', label: 'Projects Completed', icon: Briefcase },
-              { value: '20+', label: 'Technologies', icon: Code },
+              { value: '10+', label: 'Projects Completed', icon: Briefcase },
+              { value: '6+', label: 'Technologies', icon: Code },
               { value: '95%', label: 'Performance Score', icon: TrendingUp },
             ].map((stat, index) => {
               const Icon = stat.icon;
