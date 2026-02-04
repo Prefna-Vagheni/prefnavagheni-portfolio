@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import IconContent from './IconContent';
+import { Cpu, Globe, Terminal } from 'lucide-react';
 
 function CoreValue() {
   const values = [
