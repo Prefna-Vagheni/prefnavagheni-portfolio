@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 
-function TerminalFooter() {
+function TerminalFooter({ text = '' }) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -14,7 +14,10 @@ function TerminalFooter() {
       <span className="text-foreground/40">:</span>
       <span className="text-foreground/60">~</span>
       <span className="text-foreground/40">$</span>
-      <span className="ml-2 animate-pulse">_</span>
+      <span className="ml-2">
+        {text}
+        <span className="animate-pulse">_</span>
+      </span>
     </motion.div>
   );
 }

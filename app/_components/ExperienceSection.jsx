@@ -9,6 +9,8 @@ import {
   Code,
   Award,
 } from 'lucide-react';
+import TerminalHeader from './TerminalHeader';
+import TerminalFooter from './TerminalFooter';
 
 export default function ExperienceSection() {
   const experiences = [
@@ -107,25 +109,7 @@ export default function ExperienceSection() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,rgba(234,88,12,0.05),transparent)]" />
 
       <div className="max-w-6xl mx-auto relative z-10">
-        {/* Terminal Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-16"
-        >
-          <div className="font-mono text-sm text-foreground/60 mb-4">
-            <span className="text-accent">guest@portfolio</span>
-            <span className="text-foreground/40">:</span>
-            <span className="text-foreground/60">~</span>
-            <span className="text-foreground/40">$</span> cat experience.log
-          </div>
-          <h2 className="text-5xl sm:text-6xl font-bold mb-6 text-foreground">
-            Work Experience
-          </h2>
-          <div className="w-24 h-1 bg-accent" />
-        </motion.div>
+        <TerminalHeader title="Work Experience" text="cat experience.log" />
 
         {/* Experience Timeline */}
         <div className="space-y-8 relative">
@@ -273,20 +257,7 @@ export default function ExperienceSection() {
           </div>
         </motion.div>
 
-        {/* Terminal Footer */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="mt-16 font-mono text-sm text-foreground/60"
-        >
-          <span className="text-accent">guest@portfolio</span>
-          <span className="text-foreground/40">:</span>
-          <span className="text-foreground/60">~</span>
-          <span className="text-foreground/40">$</span>
-          <span className="ml-2">EOF — End of Experience Log</span>
-        </motion.div>
+        <TerminalFooter text="EOF — End of Experience Log" />
       </div>
     </section>
   );
