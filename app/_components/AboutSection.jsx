@@ -3,30 +3,26 @@
 import { motion } from 'framer-motion';
 import { Terminal, Code2, Cpu, Globe, Zap, Users } from 'lucide-react';
 import IconContent from './IconContent';
+import TerminalFooter from './TerminalFooter';
+import CoreValue from './CoreValue';
+import StatsGrid from './StatsGrid';
 
 export default function AboutSection() {
-  const stats = [
-    { label: 'Lines of Code', value: '100K+', icon: Code2 },
-    { label: 'Projects Shipped', value: '15+', icon: Zap },
-    { label: 'Technologies', value: '20+', icon: Cpu },
-    { label: 'Happy Clients', value: '8+', icon: Users },
-  ];
-
   const journey = [
     {
-      year: '2024',
+      year: '2025',
       title: 'Full-Stack Transition',
       description:
         'Expanding from frontend expertise into backend systems, databases, and cloud infrastructure.',
     },
     {
-      year: '2023',
+      year: '2024',
       title: 'Frontend Mastery',
       description:
         'Built production-grade applications with React, Next.js, and modern animation libraries.',
     },
     {
-      year: '2022',
+      year: '2023',
       title: 'Engineering Foundation',
       description:
         'Started journey in web development, focusing on clean code and user experience.',
@@ -143,73 +139,10 @@ export default function AboutSection() {
         </motion.div>
 
         {/* Stats Grid */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-20"
-        >
-          {stats.map((stat, index) => {
-            const Icon = stat.icon;
-            return (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.4 + index * 0.1 }}
-                whileHover={{ scale: 1.05, y: -5 }}
-                className="bg-card border border-border rounded-lg p-6 text-center group hover:border-accent/50 transition-all duration-300"
-              >
-                <Icon className="w-8 h-8 mx-auto mb-3 text-accent transition-colors" />
-                <div className="text-3xl font-bold text-foreground mb-1 font-mono">
-                  {stat.value}
-                </div>
-                <div className="text-sm text-foreground/60">{stat.label}</div>
-              </motion.div>
-            );
-          })}
-        </motion.div>
+        <StatsGrid />
 
         {/* Core Values */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="mb-20"
-        >
-          <h3 className="text-3xl font-bold mb-8 text-foreground font-mono flex items-center gap-3">
-            <span className="text-accent">{'//'}</span> Core Values
-          </h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            {values.map((value, index) => {
-              const Icon = value.icon;
-              return (
-                <motion.div
-                  key={value.title}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
-                  className="bg-card border border-border rounded-lg p-6 hover:border-accent/50 transition-all duration-300 group"
-                >
-                  <IconContent divClass="w-12 h-12">
-                    <Icon className={`w-6 h-6 `} />
-                  </IconContent>
-
-                  <h4 className={`text-xl font-bold mb-2 text-foreground `}>
-                    {value.title}
-                  </h4>
-                  <p className="text-foreground/70 leading-relaxed">
-                    {value.description}
-                  </p>
-                </motion.div>
-              );
-            })}
-          </div>
-        </motion.div>
+        <CoreValue values={values} />
 
         {/* Journey Timeline */}
         <motion.div
@@ -258,20 +191,7 @@ export default function AboutSection() {
           </div>
         </motion.div>
 
-        {/* Terminal Footer */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.7 }}
-          className="mt-16 font-mono text-sm text-foreground/60"
-        >
-          <span className="text-accent">guest@portfolio</span>
-          <span className="text-foreground/40">:</span>
-          <span className="text-foreground/60">~</span>
-          <span className="text-foreground/40">$</span>
-          <span className="ml-2 animate-pulse">_</span>
-        </motion.div>
+        <TerminalFooter />
       </div>
     </section>
   );
