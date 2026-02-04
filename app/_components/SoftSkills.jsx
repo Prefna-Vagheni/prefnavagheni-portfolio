@@ -9,6 +9,7 @@ import {
   Users,
   Zap,
 } from 'lucide-react';
+import IconContent from './IconContent';
 
 const softSkills = [
   {
@@ -74,22 +75,18 @@ function SoftSkills() {
               transition={{ duration: 0.4, delay: index * 0.05 }}
               className="bg-card border border-border rounded-lg p-6 hover:border-accent/50 transition-all duration-300 group"
             >
-              {/* Icon */}
-              <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+              <IconContent divClass="w-12 h-12">
                 <Icon className="w-6 h-6 " />
-              </div>
+              </IconContent>
 
-              {/* Name */}
               <h4 className="text-lg font-bold text-foreground mb-2">
                 {skill.name}
               </h4>
 
-              {/* Description */}
               <p className="text-sm text-foreground/70 mb-4">
                 {skill.description}
               </p>
 
-              {/* Level Bar */}
               <div className="space-y-1">
                 <div className="flex items-center justify-between text-xs">
                   <span className="text-foreground/60">Proficiency</span>
