@@ -2,6 +2,7 @@
 import { containerVariants } from '@/_utils/animations';
 import { motion } from 'framer-motion';
 import { Cpu, Globe, Database, Layout, Code2, Terminal } from 'lucide-react';
+import IconContent from './IconContent';
 
 const tech = [
   {
@@ -61,9 +62,8 @@ export default function TechStack() {
             className={`group relative overflow-hidden rounded-2xl border border-border bg-card p-6 flex flex-col justify-between transition-colors hover:border-accent/50 ${item.size}`}
           >
             <div className="flex justify-between items-start">
-              <div className="p-2 rounded-lg bg-background border border-border text-foreground group-hover:text-accent transition-colors">
-                {item.icon}
-              </div>
+              <IconContent divClass="p-2">{item.icon}</IconContent>
+              
               {item.highlight && (
                 <span className="text-[10px] font-mono px-2 py-1 rounded-full bg-accent/10 text-accent border border-accent/20 animate-pulse">
                   IN_PROGRESS

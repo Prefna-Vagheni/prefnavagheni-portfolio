@@ -243,7 +243,7 @@ export default function ExperienceSection() {
           className="mt-16 bg-card border border-border rounded-lg p-8"
         >
           <h3 className="text-xl font-bold text-foreground mb-6 font-mono flex items-center gap-2">
-            <span className="text-accent">${'//'} </span> Career Summary
+            <span className="text-accent">{'//'} </span> Career Summary
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[

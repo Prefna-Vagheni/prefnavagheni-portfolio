@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Terminal, Code2, Cpu, Globe, Zap, Users } from 'lucide-react';
+import IconContent from './IconContent';
 
 export default function AboutSection() {
   const stats = [
@@ -194,11 +195,10 @@ export default function AboutSection() {
                   transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
                   className="bg-card border border-border rounded-lg p-6 hover:border-accent/50 transition-all duration-300 group"
                 >
-                  <div
-                    className={`w-12 h-12 rounded-lg bg-background border border-border text-foreground group-hover:text-accent transition-colors flex items-center justify-center`}
-                  >
+                  <IconContent divClass="w-12 h-12">
                     <Icon className={`w-6 h-6 `} />
-                  </div>
+                  </IconContent>
+
                   <h4 className={`text-xl font-bold mb-2 text-foreground `}>
                     {value.title}
                   </h4>
