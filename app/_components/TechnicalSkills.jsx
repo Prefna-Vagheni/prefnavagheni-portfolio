@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Code2, Database, TestTube, Wrench } from 'lucide-react';
+import IconContent from './IconContent';
 
 function TechnicalSkills() {
   const technicalSkills = {
@@ -90,9 +91,9 @@ function TechnicalSkills() {
             >
               {/* Category Header */}
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
+                <IconContent divClass="w-10 h-10">
                   <Icon className="w-5 h-5 " />
-                </div>
+                </IconContent>
                 <h4 className="text-xl font-bold text-foreground">
                   {category}
                 </h4>

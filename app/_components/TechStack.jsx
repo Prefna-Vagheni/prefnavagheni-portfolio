@@ -63,7 +63,7 @@ export default function TechStack() {
           >
             <div className="flex justify-between items-start">
               <IconContent divClass="p-2">{item.icon}</IconContent>
-              
+
               {item.highlight && (
                 <span className="text-[10px] font-mono px-2 py-1 rounded-full bg-accent/10 text-accent border border-accent/20 animate-pulse">
                   IN_PROGRESS

@@ -111,7 +111,6 @@ export default function ExperienceSection() {
       <div className="max-w-6xl mx-auto relative z-10">
         <TerminalHeader title="Work Experience" text="cat experience.log" />
 
-        {/* Experience Timeline */}
         <div className="space-y-8 relative">
           {/* Vertical line */}
           <div className="absolute left-2.75 sm:left-3.75 top-8 bottom-8 w-0.5 bg-linear-to-b from-accent via-border to-transparent" />
