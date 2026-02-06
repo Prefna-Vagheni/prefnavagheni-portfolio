@@ -50,7 +50,7 @@ function TechnicalSkills() {
     },
   };
 
-  // Helper fu
+  // Helper
   const getProficiencyColor = (level) => {
     if (level >= 90) return 'bg-gray-500';
     if (level >= 75) return 'bg-gray-500/80';
