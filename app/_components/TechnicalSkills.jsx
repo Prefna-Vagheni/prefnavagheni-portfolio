@@ -102,7 +102,7 @@ function TechnicalSkills() {
               <div className="space-y-4">
                 {data.skills.map((skill, index) => (
                   <div key={skill.name}>
-                    {/* Skill Name and Lev */}
+                    {/* Skill Name and  */}
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center gap-2">
                         <span className="text-foreground font-medium">
