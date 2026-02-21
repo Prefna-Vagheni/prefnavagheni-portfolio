@@ -11,7 +11,7 @@ export default function SkillsSection() {
       id="skills"
       className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-background"
     >
-      {/* Background effect */}
+      {/* Background effect line */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_50%,rgba(234,88,12,0.05),transparent)]" />
 
       <div className="max-w-7xl mx-auto relative z-10">
