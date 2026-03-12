@@ -9,7 +9,7 @@ const projects = [
   {
     id: '01',
     hash: 'sha256:7f8e3a',
-    title: 'DevPulse Dashboard',
+    title: 'DevPulse App',
     description:
       'A full-stack business intelligence platform designed for software freelancers to centralize project management and financial health. This project replaces fragmented spreadsheets with a unified, data-driven dashboard that offers real-time insights into earnings, expenses, and client performance.',
     // description:
@@ -20,7 +20,7 @@ const projects = [
     // stack: ['Next.js', 'Redis', 'Framer Motion', 'Socket.io'],
     link: 'https://devplus-seven.vercel.app/',
     github: 'https://github.com/Prefna-Vagheni/dev-plus',
-    image: '/images/freelancer-bg.png',
+    image: '/images/devpulse.png',
     // image:
     // 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop', // Placeholder
   },
