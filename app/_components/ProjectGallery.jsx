@@ -8,17 +8,23 @@ import Link from 'next/link';
 const projects = [
   {
     id: '01',
-    hash: 'sha256:7f8e3a',
-    title: 'DevPulse App',
+    hash: 'sha256:9e4a2b',
+    title: 'DevPulse Analytics',
     description:
-      'A full-stack business intelligence platform designed for software freelancers to centralize project management and financial health. This project replaces fragmented spreadsheets with a unified, data-driven dashboard that offers real-time insights into earnings, expenses, and client performance.',
-    // description:
-    //   'A real-time data visualization platform focusing on fluid animations and high-throughput data streams.',
+      'A high-fidelity GitHub analytics platform that transforms raw commit data into actionable engineering insights. Moving beyond basic contribution heatmaps, this project provides a technical deep-dive into developer velocity, language distribution, and real-time activity tracking through a minimalist, luxury-focused interface.',
     backendNote:
-      'Built a custom WebSocket provider to handle live data updates with a 40ms latency target.',
-    stack: ['React 19', 'Tailwind', 'Tailwind CSS', 'TanStack Query'],
+      'Architected a low-latency pipeline using Redis Pub/Sub and Socket.io for instant activity streaming, backed by a custom Prisma-optimized PostgreSQL layer.',
+    stack: [
+      'Next.js 15',
+      'React 19',
+      'Tailwind CSS',
+      'Prisma',
+      'Redis',
+      'Socket.io',
+      'Gemini AI',
+    ],
     // stack: ['Next.js', 'Redis', 'Framer Motion', 'Socket.io'],
-    link: 'https://devplus-seven.vercel.app/',
+    link: 'dev-pulse-production.up.railway.app',
     github: 'https://github.com/Prefna-Vagheni/dev-plus',
     image: '/images/devpulse.png',
     // image:

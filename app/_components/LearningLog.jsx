@@ -5,7 +5,7 @@ import { BookOpen, Terminal, ArrowUpRight, Cpu } from 'lucide-react';
 
 const logs = [
   {
-    date: '2024.05',
+    date: '2026.01',
     topic: 'Authentication Patterns',
     description:
       'Deep dive into JWT vs. Session-based auth. Implemented a custom refresh token rotation strategy.',
@@ -13,7 +13,7 @@ const logs = [
     tags: ['Security', 'Node.js'],
   },
   {
-    date: '2024.04',
+    date: '2026.02',
     topic: 'Relational Modeling',
     description:
       'Architecting one-to-many and many-to-many relationships using Prisma. Understanding ACID compliance.',
@@ -21,7 +21,7 @@ const logs = [
     tags: ['PostgreSQL', 'Prisma'],
   },
   {
-    date: '2024.04',
+    date: '2026.03',
     topic: 'Containerization',
     description:
       'Dockerizing a Next.js frontend with a Node/Express backend. Optimizing multi-stage builds for performance.',
@@ -29,7 +29,7 @@ const logs = [
     tags: ['Docker', 'DevOps'],
   },
   {
-    date: '2024.03',
+    date: '2026.03',
     topic: 'Middleware Architecture',
     description:
       'Building custom error-handling and logging middleware to intercept system-level events.',
