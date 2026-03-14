@@ -3,6 +3,12 @@ import { motion } from 'framer-motion';
 
 const journey = [
   {
+    year: '2026',
+    title: 'Full-Stack Mastery & AI Integration',
+    description:
+      'Mastering end-to-end architecture, integrating advanced AI models, and crafting high-end, minimalist digital experiences.',
+  },
+  {
     year: '2025',
     title: 'Full-Stack Transition',
     description:

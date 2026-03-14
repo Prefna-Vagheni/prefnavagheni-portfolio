@@ -14,41 +14,43 @@ import TerminalFooter from './TerminalFooter';
 
 export default function ExperienceSection() {
   const experiences = [
+    // {
+    //   company: 'Tech Startup Inc.',
+    //   role: 'Frontend Engineer',
+    //   type: 'Full-time',
+    //   location: 'Remote',
+    //   period: 'Jan 2024 - Present',
+    //   duration: '1+ years',
+    //   description:
+    //     'Leading frontend development for a SaaS platform serving 10K+ users. Architected component library and implemented design system.',
+    //   achievements: [
+    //     'Reduced bundle size by 40% through code-splitting and lazy loading',
+    //     'Improved Lighthouse performance score from 65 to 95',
+    //     'Built real-time collaboration features using WebSockets',
+    //     'Mentored 2 junior developers on React best practices',
+    //   ],
+    //   technologies: [
+    //     'React',
+    //     'Next.js',
+    //     'TypeScript',
+    //     'Tailwind CSS',
+    //     'Framer Motion',
+    //     'WebSockets',
+    //   ],
+    //   impact: {
+    //     metric: '40%',
+    //     description: 'Performance Improvement',
+    //   },
+    // },
     {
-      company: 'Tech Startup Inc.',
-      role: 'Frontend Engineer',
-      type: 'Full-time',
-      location: 'Remote',
-      period: 'Jan 2024 - Present',
-      duration: '1+ years',
-      description:
-        'Leading frontend development for a SaaS platform serving 10K+ users. Architected component library and implemented design system.',
-      achievements: [
-        'Reduced bundle size by 40% through code-splitting and lazy loading',
-        'Improved Lighthouse performance score from 65 to 95',
-        'Built real-time collaboration features using WebSockets',
-        'Mentored 2 junior developers on React best practices',
-      ],
-      technologies: [
-        'React',
-        'Next.js',
-        'TypeScript',
-        'Tailwind CSS',
-        'Framer Motion',
-        'WebSockets',
-      ],
-      impact: {
-        metric: '40%',
-        description: 'Performance Improvement',
-      },
-    },
-    {
-      company: 'Digital Agency',
+      company: 'Freelance',
       role: 'Frontend Developer',
-      type: 'Contract',
-      location: 'Hybrid',
-      period: 'Jun 2023 - Dec 2023',
-      duration: '7 months',
+      // type: 'Contract',
+      type: 'Self-employed',
+      // location: 'Hybrid',
+      location: 'Remote',
+      period: 'Jun 2024 - Dec 2025',
+      duration: '1.5 years',
       description:
         'Developed custom websites and web applications for clients in e-commerce, healthcare, and finance sectors.',
       achievements: [
@@ -61,7 +63,8 @@ export default function ExperienceSection() {
         'React',
         'Vue.js',
         'SCSS',
-        'Node.js',
+        // 'Node.js',
+        'Framer Motion',
         'PostgreSQL',
         'Docker',
       ],
@@ -75,12 +78,12 @@ export default function ExperienceSection() {
       role: 'Full-Stack Developer',
       type: 'Self-employed',
       location: 'Remote',
-      period: 'Jan 2022 - May 2023',
-      duration: '1.5 years',
+      period: 'March 2025 - Present',
+      duration: 'Ongoing',
       description:
         'Provided end-to-end development services for small businesses and startups, specializing in MVPs and prototypes.',
       achievements: [
-        'Built and launched 5 production applications',
+        'Built and launched 4 production applications',
         'Achieved 100% client satisfaction rate',
         'Reduced client hosting costs by migrating to serverless architecture',
         'Established long-term retainer relationships with 3 clients',
@@ -94,7 +97,7 @@ export default function ExperienceSection() {
         'Supabase',
       ],
       impact: {
-        metric: '5',
+        metric: '4',
         description: 'Apps Launched',
       },
     },

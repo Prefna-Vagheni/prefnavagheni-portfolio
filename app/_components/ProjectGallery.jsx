@@ -25,43 +25,43 @@ const projects = [
     // 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop', // Placeholder
   },
   {
-    id: '01',
-    hash: 'sha256:7f8e9a',
-    title: 'Freelancer Analytics Dashboard',
-    description:
-      'A full-stack business intelligence platform designed for software freelancers to centralize project management and financial health. This project replaces fragmented spreadsheets with a unified, data-driven dashboard that offers real-time insights into earnings, expenses, and client performance.',
-    // description:
-    //   'A real-time data visualization platform focusing on fluid animations and high-throughput data streams.',
-    backendNote:
-      'Built a custom WebSocket provider to handle live data updates with a 40ms latency target.',
-    stack: ['React 19', 'Tailwind', 'Tailwind CSS', 'TanStack Query'],
-    // stack: ['Next.js', 'Redis', 'Framer Motion', 'Socket.io'],
-    link: 'https://freelancer-analytics.vercel.app',
-    github: 'https://github.com/Prefna-Vagheni/Freelancer-Analytics',
-    image: '/images/freelancer-bg.png',
-    // image:
-    // 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop', // Placeholder
-  },
-  {
-    id: '01',
-    hash: 'sha256:7f8e9a',
-    title: 'Freelancer Analytics Dashboard',
-    description:
-      'A full-stack business intelligence platform designed for software freelancers to centralize project management and financial health. This project replaces fragmented spreadsheets with a unified, data-driven dashboard that offers real-time insights into earnings, expenses, and client performance.',
-    // description:
-    //   'A real-time data visualization platform focusing on fluid animations and high-throughput data streams.',
-    backendNote:
-      'Built a custom WebSocket provider to handle live data updates with a 40ms latency target.',
-    stack: ['React 19', 'Tailwind', 'Tailwind CSS', 'TanStack Query'],
-    // stack: ['Next.js', 'Redis', 'Framer Motion', 'Socket.io'],
-    link: 'https://freelancer-analytics.vercel.app',
-    github: 'https://github.com/Prefna-Vagheni/Freelancer-Analytics',
-    image: '/images/freelancer-bg.png',
-    // image:
-    // 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop', // Placeholder
-  },
-  {
     id: '02',
+    hash: 'sha256:7f8e9a',
+    title: 'Freelancer Analytics Dashboard',
+    description:
+      'A full-stack business intelligence platform designed for software freelancers to centralize project management and financial health. This project replaces fragmented spreadsheets with a unified, data-driven dashboard that offers real-time insights into earnings, expenses, and client performance.',
+    // description:
+    //   'A real-time data visualization platform focusing on fluid animations and high-throughput data streams.',
+    backendNote:
+      'Built a custom WebSocket provider to handle live data updates with a 40ms latency target.',
+    stack: ['React 19', 'Tailwind', 'Tailwind CSS', 'TanStack Query'],
+    // stack: ['Next.js', 'Redis', 'Framer Motion', 'Socket.io'],
+    link: 'https://freelancer-analytics.vercel.app',
+    github: 'https://github.com/Prefna-Vagheni/Freelancer-Analytics',
+    image: '/images/freelancer-bg.png',
+    // image:
+    // 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop', // Placeholder
+  },
+  // {
+  //   id: '03',
+  //   hash: 'sha256:7f8e9a',
+  //   title: 'Freelancer Analytics Dashboard',
+  //   description:
+  //     'A full-stack business intelligence platform designed for software freelancers to centralize project management and financial health. This project replaces fragmented spreadsheets with a unified, data-driven dashboard that offers real-time insights into earnings, expenses, and client performance.',
+  //   // description:
+  //   //   'A real-time data visualization platform focusing on fluid animations and high-throughput data streams.',
+  //   backendNote:
+  //     'Built a custom WebSocket provider to handle live data updates with a 40ms latency target.',
+  //   stack: ['React 19', 'Tailwind', 'Tailwind CSS', 'TanStack Query'],
+  //   // stack: ['Next.js', 'Redis', 'Framer Motion', 'Socket.io'],
+  //   link: 'https://freelancer-analytics.vercel.app',
+  //   github: 'https://github.com/Prefna-Vagheni/Freelancer-Analytics',
+  //   image: '/images/freelancer-bg.png',
+  //   // image:
+  //   // 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop', // Placeholder
+  // },
+  {
+    id: '03',
     hash: 'sha256:3d2c1b',
     title: 'Lockin Salon Appointment',
     description:

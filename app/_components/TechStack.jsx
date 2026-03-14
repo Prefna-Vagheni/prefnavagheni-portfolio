@@ -13,13 +13,13 @@ const tech = [
   },
   {
     name: 'Backend',
-    tools: ['PostgreSQL', 'Prisma'],
+    tools: ['PostgreSQL', 'Prisma', 'Node'],
     icon: <Database className="w-5 h-5" />,
     size: 'md:col-span-1',
   },
   {
     name: 'Languages',
-    tools: ['TypeScript', 'JavaScript', ''],
+    tools: ['TypeScript', 'JavaScript'],
     icon: <Code2 className="w-5 h-5" />,
     size: 'md:col-span-1',
   },
