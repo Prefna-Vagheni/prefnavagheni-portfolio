@@ -8,14 +8,37 @@ import SubmitButton from './SubmitButton';
 
 export default function Contact() {
   const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   const handleAction = async (formData) => {
     const result = await sendEmail(formData);
     if (result.success) {
-      toast.success('Command executed: Message Sent!');
+      toast.success('Command executed: Message sent successfully! 🚀', {
+        duration: 4000,
+        style: {
+          background: '#0A0A0A',
+          color: '#FAFAFA',
+          border: '1px solid #EA580C',
+        },
+        iconTheme: {
+          primary: '#EA580C',
+          secondary: '#FAFAFA',
+        },
+      });
       setEmail('');
+      setMessage('');
     } else {
-      toast.error('Error: Connection failed.');
+      toast.error(
+        result.error || 'Error: Connection failed. Please try again.',
+        {
+          duration: 4000,
+          style: {
+            background: '#0A0A0A',
+            color: '#FAFAFA',
+            border: '1px solid #DC2626',
+          },
+        },
+      );
     }
   };
 
@@ -54,20 +77,38 @@ export default function Contact() {
               <span className="text-emerald-500">Ready to collaborate.</span>
             </div>
 
-            <div className="pt-4">
-              <label className="block mb-4">
+            <div className="pt-4 space-y-6">
+              {/* Email Field */}
+              <label className="block">
                 <span className="text-accent font-bold">?</span> What is your
                 email address?
-              </label>
-              <div className="flex flex-col md:flex-row gap-4">
                 <input
                   name="senderEmail"
                   type="email"
                   placeholder="name@company.com"
-                  className="bg-transparent border-b-2 border-border focus:border-accent outline-none py-2 grow transition-colors font-mono"
+                  required
+                  className="block w-full bg-transparent border-b-2 border-border focus:border-accent outline-none py-2 mt-2 transition-colors font-mono"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
+              </label>
+
+              {/* Message Field */}
+              <label className="block">
+                <span className="text-accent font-bold">?</span> What would you
+                like to say? (Optional)
+                <textarea
+                  name="message"
+                  placeholder="Type your message here..."
+                  rows={4}
+                  className="block w-full bg-transparent border-2 border-border focus:border-accent outline-none py-2 px-3 mt-2 rounded transition-colors font-mono resize-none"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                />
+              </label>
+
+              {/* Submit Button */}
+              <div className="pt-2">
                 <SubmitButton />
               </div>
             </div>
@@ -82,19 +123,28 @@ export default function Contact() {
             <div className="flex gap-8">
               <a
                 href="https://github.com/Prefna-Vagheni"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-accent transition-colors"
+                aria-label="GitHub Profile"
               >
                 <Github size={24} />
               </a>
               <a
                 href="https://www.linkedin.com/in/prefna-vagheni-051115266/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-accent transition-colors"
+                aria-label="LinkedIn Profile"
               >
                 <Linkedin size={24} />
               </a>
               <a
                 href="https://x.com/PrefnaV"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-accent transition-colors"
+                aria-label="Twitter/X Profile"
               >
                 <Twitter size={24} />
               </a>
@@ -104,7 +154,7 @@ export default function Contact() {
           <div className="text-left md:text-right font-mono text-[10px] opacity-40 leading-loose">
             DESIGNED & ENGINEERED BY PREFNA VAGHENI
             <br />
-            BUILT WITH NEXT.JS 14 / TAILWIND / FRAMER MOTION <br />©{' '}
+            BUILT WITH NEXT.JS 16 / TAILWIND / FRAMER MOTION <br />©{' '}
             {new Date().getFullYear()} ALL RIGHTS RESERVED_
           </div>
         </div>

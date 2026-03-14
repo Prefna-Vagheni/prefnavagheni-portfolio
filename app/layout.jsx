@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import { ThemeProvider } from 'next-themes';
 import './globals.css';
 import Navbar from './_components/Navbar';
+import { Toaster } from 'react-hot-toast';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <Navbar />
           <div className="relative flex flex-col min-h-screen">{children}</div>
+          <Toaster position="top-center" />
 
           <footer className="py-10 text-center font-mono text-[10px] opacity-20">
             SYSTEM_STATUS: OPERATIONAL // PORTFOLIO_V1.0

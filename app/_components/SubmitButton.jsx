@@ -20,7 +20,7 @@ export default function SubmitButton() {
         </>
       ) : (
         <>
-          Send Command <Send size={14} />
+          Send Your Mail Address <Send size={14} />
         </>
       )}
     </button>
