@@ -1,0 +1,61 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark background -->
+  <rect width="512" height="512" fill="#0A0A0A"/>
+  
+  <!-- Orange gradient background accent -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EA580C;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#C2410C;stop-opacity:0.1" />
+    </linearGradient>
+    
+    <linearGradient id="letterGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EA580C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F97316;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Subtle grid pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background gradient circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#bgGradient)"/>
+  
+  <!-- Grid pattern overlay -->
+  <rect width="512" height="512" fill="url(#grid)"/>
+  
+  <!-- Terminal-style border -->
+  <circle cx="256" cy="256" r="200" fill="none" stroke="#EA580C" stroke-width="3" opacity="0.3"/>
+  
+  <!-- Letter 'P' - Bold, geometric, engineering style -->
+  <path d="
+    M 180 160
+    L 280 160
+    Q 340 160 340 220
+    Q 340 280 280 280
+    L 220 280
+    L 220 360
+    L 180 360
+    Z
+    M 220 200
+    L 220 240
+    L 280 240
+    Q 300 240 300 220
+    Q 300 200 280 200
+    Z
+  " fill="url(#letterGradient)" stroke="#EA580C" stroke-width="2"/>
+  
+  <!-- Accent dot (terminal cursor style) -->
+  <circle cx="360" cy="360" r="8" fill="#EA580C">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Subtle corner accents -->
+  <line x1="100" y1="100" x2="140" y2="100" stroke="#EA580C" stroke-width="3" opacity="0.4"/>
+  <line x1="100" y1="100" x2="100" y2="140" stroke="#EA580C" stroke-width="3" opacity="0.4"/>
+  
+  <line x1="412" y1="412" x2="372" y2="412" stroke="#EA580C" stroke-width="3" opacity="0.4"/>
+  <line x1="412" y1="412" x2="412" y2="372" stroke="#EA580C" stroke-width="3" opacity="0.4"/>
+</svg>
