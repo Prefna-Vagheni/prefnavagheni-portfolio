@@ -142,8 +142,8 @@ def create_resume():
     skills_data = [
         ["<b>Frontend:</b>", "React, Next.js 15, TypeScript, JavaScript, Tailwind CSS, Framer Motion"],
         ["<b>Backend:</b>", "Node.js, PostgreSQL, Prisma, Redis, Socket.io, RESTful APIs"],
-        ["<b>Tools & Platforms:</b>", "Git/GitHub, Docker, Vercel, Supabase, Firebase, Stripe API"],
-        ["<b>Currently Learning:</b>", "System Design, AWS, Microservices Architecture, Gemini AI"],
+        ["<b>Tools:</b>", "Git/GitHub, Docker, Vercel, Supabase, Firebase, Stripe API"],
+        ["<b>Learning:</b>", "System Design, AWS, Microservices Architecture, Gemini AI"],
     ]
     
     skills_table = Table(skills_data, colWidths=[1.4*inch, 5.3*inch])
