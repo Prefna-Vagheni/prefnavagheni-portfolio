@@ -37,7 +37,7 @@ const projects = [
     description:
       'A full-stack business intelligence platform designed for software freelancers to centralize project management and financial health. This project replaces fragmented spreadsheets with a unified, data-driven dashboard that offers real-time insights into earnings, expenses, and client performance.',
     // description:
-    //   'A real-time data visualization platform focusing on fluid animations and high-throughput data streams.',
+    //   'A real-time data visualization platform focusing on fluid animation and high-throughput data streams.',
     backendNote:
       'Built a custom WebSocket provider to handle live data updates with a 40ms latency target.',
     stack: ['React 19', 'Tailwind', 'Tailwind CSS', 'TanStack Query'],
