@@ -3,13 +3,13 @@
 Resume PDF Generator - Updated with Actual Portfolio Data
 Generates a professional resume PDF matching the portfolio's engineering orange branding
 """
-
 from reportlab.lib.pagesizes import letter
 from reportlab.lib import colors
 from reportlab.lib.units import inch
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, KeepTogether
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.enums import TA_LEFT, TA_CENTER, TA_RIGHT
+import os
 
 # Portfolio brand color - Engineering Orange
 ACCENT_COLOR = colors.HexColor('#EA580C')  # hsl(20.5 90.2% 48.2%)
@@ -18,7 +18,12 @@ GRAY_COLOR = colors.HexColor('#666666')    # Gray for secondary text
 
 def create_resume():
     # Create PDF
-    filename = "/mnt/user-data/outputs/Prefna_Vagheni_Resume.pdf"
+    # filename = "/mnt/user-data/outputs/Prefna_Vagheni_Resume.pdf"
+    output_dir = "outputs"
+    os.makedirs(output_dir, exist_ok=True)
+
+    filename = os.path.join(output_dir, "Prefna_Vagheni_Resume.pdf")
+    
     doc = SimpleDocTemplate(
         filename,
         pagesize=letter,
