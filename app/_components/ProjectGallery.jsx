@@ -44,7 +44,7 @@ const projects = [
     // stack: ['Next.js', 'Redis', 'Framer Motion', 'Socket.io'],
     link: 'https://freelancer-analytics.vercel.app',
     github: 'https://github.com/Prefna-Vagheni/Freelancer-Analytics',
-    image: '/images/freelancer-bg.png',
+    image: '/images/freelancer-bg.webp',
     // image:
     // 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop', // Placeholder
   },
