@@ -25,7 +25,7 @@ const projects = [
     ],
     // stack: ['Next.js', 'Redis', 'Framer Motion', 'Socket.io'],
     link: 'dev-pulse-production.up.railway.app',
-    github: 'https://github.com/Prefna-Vagheni/dev-plus',
+    github: 'https://github.com/Prefna-Vagheni/dev-pulse',
     image: '/images/devpulse.png',
     // image:
     // 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop', // Placeholder
