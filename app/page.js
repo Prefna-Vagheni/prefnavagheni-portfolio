@@ -9,6 +9,7 @@ import AboutSection from './_components/AboutSection';
 import ExperienceSection from './_components/ExperienceSection';
 import ResumeDownload from './_components/ResumeDownload';
 import SkillsSection from './_components/SkillsSection';
+import WhyHireMe from './_components/WhyHireMe';
 
 export default function Page() {
   return (
@@ -56,6 +57,12 @@ export default function Page() {
       <Divider />
 
       <ResumeDownload />
+
+      <Divider />
+
+      <section id="why-hire">
+        <WhyHireMe />
+      </section>
 
       <Divider />
 
