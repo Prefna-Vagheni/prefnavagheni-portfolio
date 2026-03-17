@@ -61,7 +61,7 @@ export default function ResumeDownload() {
                 <a
                   href="/resume.pdf"
                   download="Prefna_Vagheni_Resume.pdf"
-                  className="group/btn flex items-center justify-center gap-2 px-6 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent/90 transition-all duration-300 shadow-lg shadow-accent/20 hover:shadow-accent/30 hover:scale-105"
+                  className="group/btn flex items-center justify-center gap-2 px-6 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent/90 transition-all duration-300  shadow-accent/20 hover:shadow-accent/30 hover:scale-105"
                 >
                   <Download className="w-5 h-5 group-hover/btn:animate-bounce" />
                   Download PDF
