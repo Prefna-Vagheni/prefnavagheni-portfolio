@@ -19,8 +19,13 @@ function MainAbout() {
           <p className="text-xl text-foreground font-medium">
             Hey, I&apos;m{' '}
             <span className="text-accent font-bold">Prefna Vagheni</span> — a
-            frontend specialist evolving into a full-stack engineer.
+            full-stack engineer.
           </p>
+          {/* <p className="text-xl text-foreground font-medium">
+            Hey, I&apos;m{' '}
+            <span className="text-accent font-bold">Prefna Vagheni</span> — a
+            frontend specialist evolving into a full-stack engineer.
+          </p> */}
 
           <p>
             I believe great engineering is invisible to users but evident in
@@ -36,14 +41,14 @@ function MainAbout() {
             </span>
             . Whether it&apos;s a real-time analytics dashboard or a booking
             platform handling thousands of appointments, I focus on writing
-            clean, maintainable code that solves real problems.
+            clean, maintainable code that solves real world problems.
           </p>
 
           <p>
-            When I&apos;m not coding, you&apos;ll find me diving into system
-            design patterns, experimenting with new frameworks, or contributing
-            to open-source. I&apos;m a firm believer in learning in public and
-            shipping often.
+            When I&apos;m not coding, you&apos;ll find me listening to music,
+            watching football, diving into system design patterns, experimenting
+            with new frameworks. I&apos;m a firm believer in learning in public
+            and shipping often.
           </p>
 
           <div className="pt-4 flex flex-wrap gap-3">
