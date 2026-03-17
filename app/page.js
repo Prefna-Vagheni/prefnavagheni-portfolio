@@ -3,6 +3,7 @@ import TechStack from '@/_components/TechStack';
 import ProjectGallery from '@/_components/ProjectGallery';
 import LearningLog from '@/_components/LearningLog';
 import Contact from '@/_components/Contact';
+import TechHighlights from '@/_components/TechHighlights';
 import Divider from '@/_components/Divider';
 import AboutSection from './_components/AboutSection';
 import ExperienceSection from './_components/ExperienceSection';
@@ -28,6 +29,12 @@ export default function Page() {
 
       <section id="stack">
         <TechStack />
+      </section>
+
+      <Divider />
+
+      <section id="highlights">
+        <TechHighlights />
       </section>
 
       <Divider />
