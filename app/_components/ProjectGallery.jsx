@@ -9,9 +9,11 @@ const projects = [
   {
     id: '01',
     hash: 'sha256:9e4a2b',
-    title: 'DevPulse Analytics',
+    title: 'DevPulse — AI Developer Analytics Platform',
     description:
-      'A high-fidelity GitHub analytics platform that transforms raw commit data into actionable engineering insights. Moving beyond basic contribution heatmaps, this project provides a technical deep-dive into developer velocity, language distribution, and real-time activity tracking through a minimalist, luxury-focused interface.',
+      'Built a full-stack SaaS platform analyzing GitHub activity, Uses Prisma, PostgreSQL, Redis, and background jobs with Integrated AI (Gemini) for developer insights. It handles real-time analytics and data processing',
+    // description:
+    //   'A high-fidelity GitHub analytics platform that transforms raw commit data into actionable engineering insights. Moving beyond basic contribution heatmaps, this project provides a technical deep-dive into developer velocity, language distribution, and real-time activity tracking through a minimalist, luxury-focused interface.',
     backendNote:
       'Architected a low-latency pipeline using Redis Pub/Sub and Socket.io for instant activity streaming, backed by a custom Prisma-optimized PostgreSQL layer.',
     stack: [
@@ -30,6 +32,30 @@ const projects = [
     // image:
     // 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop', // Placeholder
   },
+  // {
+  //   id: '01',
+  //   hash: 'sha256:9e4a2b',
+  //   title: 'DevPulse Analytics',
+  //   description:
+  //     'A high-fidelity GitHub analytics platform that transforms raw commit data into actionable engineering insights. Moving beyond basic contribution heatmaps, this project provides a technical deep-dive into developer velocity, language distribution, and real-time activity tracking through a minimalist, luxury-focused interface.',
+  //   backendNote:
+  //     'Architected a low-latency pipeline using Redis Pub/Sub and Socket.io for instant activity streaming, backed by a custom Prisma-optimized PostgreSQL layer.',
+  //   stack: [
+  //     'Next.js 15',
+  //     'React 19',
+  //     'Tailwind CSS',
+  //     'Prisma',
+  //     'Redis',
+  //     'Socket.io',
+  //     'Gemini AI',
+  //   ],
+  //   // stack: ['Next.js', 'Redis', 'Framer Motion', 'Socket.io'],
+  //   link: 'dev-pulse-production.up.railway.app',
+  //   github: 'https://github.com/Prefna-Vagheni/dev-pulse',
+  //   image: '/images/devpulse.png',
+  //   // image:
+  //   // 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop', // Placeholder
+  // },
   {
     id: '02',
     hash: 'sha256:7f8e9a',
@@ -156,13 +182,14 @@ export default function ProjectGallery() {
               <div className="flex gap-4 mt-8">
                 <a
                   href={project.link}
-                  className="hover:text-accent transition-colors"
+                  className="flex items-center gap-1 border border-accent p-2 hover:text-accent transition-colors"
                 >
+                  <span>Live Demo</span>
                   <ExternalLink size={20} />
                 </a>
                 <a
                   href={project.github}
-                  className="hover:text-accent transition-colors"
+                  className=" flex items-center gap-1 border border-gray-300 p-2 hover:text-accent transition-colors"
                 >
                   <Github size={20} />
                 </a>
