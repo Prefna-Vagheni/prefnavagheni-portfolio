@@ -26,7 +26,7 @@ const projects = [
       'Gemini AI',
     ],
     // stack: ['Next.js', 'Redis', 'Framer Motion', 'Socket.io'],
-    link: 'dev-pulse-production.up.railway.app',
+    link: 'https://dev-pulse-production.up.railway.app',
     github: 'https://github.com/Prefna-Vagheni/dev-pulse',
     image: '/images/devpulse.png',
     // image:
