@@ -8,6 +8,7 @@ import {
   TrendingUp,
   Code,
   Award,
+  Phone,
 } from 'lucide-react';
 import TerminalHeader from './TerminalHeader';
 import TerminalFooter from './TerminalFooter';
@@ -43,6 +44,42 @@ export default function ExperienceSection() {
     //   },
     // },
     {
+      company: 'DoinGud',
+      role: 'Full-stack Engineer',
+      // type: 'Contract',
+      type: 'Self-employed',
+      // location: 'Hybrid',
+      location: 'Remote',
+      period: 'Feb 2022 - Dec 2023',
+      duration: '1y 11 mos',
+      description:
+        'Responsible for the end-to-end architecture, deployment, and ongoing optimization of scalable Backend APIs and high-concurrency data indexing pipelines, ensuring seamless integration between complex data layers and high-fidelity frontends.',
+      achievements: [
+        'High-Performance API Design: Architected robust RESTful and WebSocket-based API endpoints',
+        'System Architecture Leadership: Led technical discussions on backend software design, prioritizing modularity',
+        'Database Engineering: Engineered and refined complex relational schemas using PostgreSQL, Prisma, and Supabase, optimizing for data integrity and high-concurrency performance.',
+        'Real-Time Event Processing: Implemented performant event-driven systems',
+      ],
+      technologies: [
+        'Node.js',
+        'PostgreSQL',
+        'Prisma',
+        // 'Node.js',
+        'Redis',
+        'Socket.io',
+        'Supabase',
+        'Docker',
+      ],
+      impact: {
+        metric: '5',
+        description: 'Projects Delivered',
+      },
+      reference: {
+        name: 'Project Manager',
+        phone: '+256786777238',
+      },
+    },
+    {
       company: 'Freelance',
       role: 'Frontend Developer',
       // type: 'Contract',
@@ -72,6 +109,42 @@ export default function ExperienceSection() {
         metric: '8',
         description: 'Projects Delivered',
       },
+      reference: {
+        name: 'Project Manager',
+        phone: '+1234567890',
+      },
+    },
+    {
+      company: 'TonTaxi Startup',
+      role: 'Full-stack',
+      type: 'Owner',
+      location: 'Hybrid',
+      period: 'Jan 2023 - Present',
+      duration: 'Ongoing',
+      description:
+        'Architected and managed the core infrastructure for TonTaxi, a real-time ride-hailing ecosystem. Responsible for the end-to-end development of high-concurrency APIs, driver-client matching algorithms, and the deployment of a low-latency event-driven architecture to ensure seamless trip execution.',
+      achievements: [
+        'Engineered a high-performance backend to manage live trip lifecycles, ensuring sub-100ms latency for driver-client matching and real-time location updates.',
+        'Designed and optimized PostgreSQL database schemas with geospatial indexing to handle high-frequency coordinate updates',
+        'Established a rigorous CI/CD culture, implementing comprehensive unit and integration tests for the trip-lifecycle logic',
+        'Built custom indexing pipelines to transform raw trip data into actionable business intelligence',
+      ],
+      technologies: [
+        'TypeScript',
+        'Vue.js',
+        'SCSS',
+        'Node.js',
+        'PostgreSQL',
+        'Docker',
+      ],
+      impact: {
+        metric: '1',
+        description: 'Project Delivered',
+      },
+      // reference: {
+      //   name: 'Project Manager',
+      //   phone: '+1234567890',
+      // },
     },
     {
       company: 'Freelance',
@@ -169,6 +242,19 @@ export default function ExperienceSection() {
                     </div>
                   </div>
                 </div>
+
+                {/* New Verification Action */}
+                {exp.reference && (
+                  <motion.a
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    href={`tel:${exp.reference.phone}`}
+                    className="flex items-center justify-center gap-2 px-3 py-2 bg-foreground/5 border border-foreground/10 rounded-md text-foreground/60 text-[10px] font-mono uppercase tracking-widest hover:bg-accent hover:text-white hover:border-accent transition-all group/btn"
+                  >
+                    <Phone className="w-3 h-3 transition-transform group-hover/btn:-rotate-12" />
+                    Verify Work
+                  </motion.a>
+                )}
 
                 {/* Description */}
                 <p className="text-foreground/80 leading-relaxed mb-4">
