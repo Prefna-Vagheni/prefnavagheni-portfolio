@@ -17,8 +17,6 @@ DARK_COLOR = colors.HexColor('#0A0A0A')    # Near Black
 GRAY_COLOR = colors.HexColor('#666666')    # Gray for secondary text
 
 def create_resume():
-    # Create PDF
-    # filename = "/mnt/user-data/outputs/Prefna_Vagheni_Resume.pdf"
     output_dir = "outputs"
     os.makedirs(output_dir, exist_ok=True)
 
@@ -33,10 +31,9 @@ def create_resume():
         bottomMargin=0.75*inch,
     )
     
-    # Define styles
     styles = getSampleStyleSheet()
     
-    # Custom styles matching portfolio
+    # Custom styles
     title_style = ParagraphStyle(
         'CustomTitle',
         parent=styles['Heading1'],
@@ -106,21 +103,17 @@ def create_resume():
         fontName='Helvetica',
     )
     
-    # Build content
     story = []
     
-    # Header with name
+    # Header
     story.append(Paragraph("PREFNA VAGHENI", title_style))
-    story.append(Paragraph(
-        "Full-Stack Engineer | Frontend Specialist",
-        subtitle_style
-    ))
+    story.append(Paragraph("Full-Stack Engineer | System Design Architect", subtitle_style))
     
     # Contact info
     contact_data = [[
-        Paragraph("prefnavagheni54@gmail.com", body_style),
-        Paragraph("linkedin.com/in/prefna-vagheni", body_style),
-        Paragraph("github.com/Prefna-Vagheni", body_style),
+        Paragraph('<a href="mailto:prefnavagheni54@gmail.com">prefnavagheni54@gmail.com</a>', body_style),
+        Paragraph('<a href="https://www.linkedin.com/in/prefna-vagheni-051115266">Click to check my LinkedIn</a>', body_style),
+        Paragraph('<a href="https://github.com/Prefna-Vagheni">github.com/Prefna-Vagheni</a>', body_style),
     ]]
     
     contact_table = Table(contact_data, colWidths=[2.3*inch, 2.3*inch, 2.3*inch])
@@ -130,42 +123,25 @@ def create_resume():
     ]))
     story.append(contact_table)
     story.append(Spacer(1, 0.2*inch))
+
+        
     
-    # Professional Summary
+    # Summary
     story.append(Paragraph("PROFESSIONAL SUMMARY", section_header_style))
     story.append(Paragraph(
-        "Frontend specialist transitioning into full-stack engineering with 2+ years of experience "
-        "building scalable, high-performance web applications. Proven track record delivering "
-        "production-ready solutions serving thousands of users. Passionate about clean code, "
-        "system architecture, and creating exceptional user experiences.",
+        "Full-stack developer building modern web applications using Next.js, React, and TypeScript on "
+        "the frontend, with Node.js, PostgreSQL, Prisma, and Redis on the backend. Built and deployed "
+        "multiple full-stack SaaS-style applications with authentication, payments, background jobs, "
+        "and AI integrations. Focused on scalable architectures, clean code, and building real-world"
+        "production-style applications.",
         body_style
     ))
     
-    # Technical Skills
-    story.append(Paragraph("TECHNICAL SKILLS", section_header_style))
-    
-    skills_data = [
-        ["<b>Frontend:</b>", "React, Next.js 15, TypeScript, JavaScript, Tailwind CSS, Framer Motion"],
-        ["<b>Backend:</b>", "Node.js, PostgreSQL, Prisma, Redis, Socket.io, RESTful APIs"],
-        ["<b>Tools:</b>", "Git/GitHub, Docker, Vercel, Supabase, Firebase, Stripe API"],
-        ["<b>Learning:</b>", "System Design, AWS, Microservices Architecture, Gemini AI"],
-    ]
-    
-    skills_table = Table(skills_data, colWidths=[1.4*inch, 5.3*inch])
-    skills_table.setStyle(TableStyle([
-        ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
-        ('VALIGN', (0, 0), (-1, -1), 'TOP'),
-        ('FONTNAME', (0, 0), (0, -1), 'Helvetica-Bold'),
-        ('FONTSIZE', (0, 0), (-1, -1), 10),
-        ('TEXTCOLOR', (0, 0), (-1, -1), DARK_COLOR),
-        ('BOTTOMPADDING', (0, 0), (-1, -1), 6),
-    ]))
-    story.append(skills_table)
     
     # Work Experience
     story.append(Paragraph("WORK EXPERIENCE", section_header_style))
     
-    # Experience 1 - Current Freelance Full-Stack
+    # Experience 1
     experience_1 = KeepTogether([
         Paragraph("Full-Stack Developer", job_title_style),
         Paragraph("Freelance | Remote | March 2025 - Present", company_style),
@@ -176,9 +152,22 @@ def create_resume():
         Spacer(1, 0.1*inch),
     ])
     story.append(experience_1)
-    
-    # Experience 2 - Frontend Developer Freelance
+
+
+    # Experience 2
     experience_2 = KeepTogether([
+        Paragraph("TonTaxi App", job_title_style),
+        Paragraph("Founder | Hybrid | January 2023 - Present", company_style),
+        Paragraph("• Architected and built the full Node.js/NestJS/PostgreSQL backend for a performant live trip ensuring sub-100ms latency for driver-client matching and real-time location updates", bullet_style),
+        Paragraph("• Maintained a modular microservices architecture using Docker, decoupling the matching engine from the billing", bullet_style),
+        Paragraph("• Developed robust RESTful endpoints to manage complex trip states (Requesting → Matching → In-Progress → Completed), prioritizing type-safety and architectural precision", bullet_style),
+        Paragraph("• Built custom indexing pipelines to transform raw trip data into actionable business intelligence", bullet_style),
+        Spacer(1, 0.1*inch),
+    ])
+    story.append(experience_2)
+    
+    # Experience 3
+    experience_3 = KeepTogether([
         Paragraph("Frontend Developer", job_title_style),
         Paragraph("Freelance | Remote | Jun 2024 - Dec 2025", company_style),
         Paragraph("• Delivered 8 client projects on time and within budget across multiple sectors", bullet_style),
@@ -187,37 +176,45 @@ def create_resume():
         Paragraph("• Established CI/CD pipeline reducing deployment time by 60%", bullet_style),
         Spacer(1, 0.1*inch),
     ])
-    story.append(experience_2)
+    story.append(experience_3)
+    
+    # Experience 4
+    experience_4 = KeepTogether([
+        Paragraph("Frontend to Full Stack Developer", job_title_style),
+        Paragraph("DoinGud | Spain • Remote | Feb 2022 - Dec 2024", company_style),
+        Paragraph("• Architected robust RESTful and WebSocket-based API endpoints using Node.js to support real-time application features", bullet_style),
+        Paragraph("• Started as Frontend beginer and got promoted in 7 months to a better Full-stack position", bullet_style),
+        Paragraph("• Led technical discussions on backend software design, prioritizing modularity", bullet_style),
+        Paragraph("• Engineered and refined complex relational schemas using PostgreSQL, Prisma, and Supabase, optimizing for data integrity and high-concurrency performance", bullet_style),
+        Spacer(1, 0.1*inch),
+    ])
+    story.append(experience_4)
     
     # Projects
     story.append(Paragraph("FEATURED PROJECTS", section_header_style))
     
-    project_1 = KeepTogether([
-        Paragraph("<b>DevPulse Analytics</b> | Next.js 15, React 19, Redis, Prisma, Socket.io, Gemini AI", job_title_style),
-        Paragraph("• GitHub analytics platform transforming commit data into engineering insights", bullet_style),
-        Paragraph("• Architected low-latency pipeline using Redis Pub/Sub and Socket.io for instant activity streaming", bullet_style),
-        Paragraph("• Prisma-optimized PostgreSQL layer with real-time developer velocity tracking", bullet_style),
-        Spacer(1, 0.08*inch),
-    ])
-    story.append(project_1)
+    projects = [
+        ("DevPulse Analytics", "Next.js 15, React 19, Redis, Prisma, Socket.io, Gemini AI", 
+         "• GitHub analytics platform transforming commit data into engineering insights", 
+         "• Architected low-latency pipeline using Redis Pub/Sub for instant activity streaming"),
+        ("TonTaxi App", "Dart, Vue, Node.js, TypeScript, Socket.io, Google Maps", 
+         "• Dart Mobile app that manages live trips with chatbox integrated", 
+         "• Geospatial indexing to handle high-frequency coordinate updates and efficient nearest-driver proximity searches"),
+        ("Freelancer Dashboard", "React 19, Tailwind CSS, TanStack Query", 
+         "• Business intelligence platform with real-time financial tracking", 
+         "• Custom WebSocket provider achieving 40ms latency for live updates"),
+        ("Lockin Salon", "Next.js 15, Supabase, NextAuth.js, Stripe", 
+         "• Full-stack booking platform with OAuth and payment integration", 
+         "• Role-based access control with dynamic availability management")
+    ]
     
-    project_2 = KeepTogether([
-        Paragraph("<b>Freelancer Analytics Dashboard</b> | React 19, Tailwind CSS, TanStack Query", job_title_style),
-        Paragraph("• Business intelligence platform for software freelancers with real-time financial tracking", bullet_style),
-        Paragraph("• Custom WebSocket provider achieving 40ms latency for live data updates", bullet_style),
-        Paragraph("• Centralized project management replacing fragmented spreadsheets", bullet_style),
-        Spacer(1, 0.08*inch),
-    ])
-    story.append(project_2)
-    
-    project_3 = KeepTogether([
-        Paragraph("<b>Lockin Salon Appointment</b> | Next.js 15, Supabase, NextAuth.js, Stripe", job_title_style),
-        Paragraph("• Full-stack booking platform with OAuth authentication and payment integration", bullet_style),
-        Paragraph("• Role-based access control with separate client and admin interfaces", bullet_style),
-        Paragraph("• Dynamic availability management with email notifications", bullet_style),
-        Spacer(1, 0.08*inch),
-    ])
-    story.append(project_3)
+    for title, tech, b1, b2 in projects:
+        story.append(KeepTogether([
+            Paragraph(f"<b>{title}</b> | {tech}", job_title_style),
+            Paragraph(b1, bullet_style),
+            Paragraph(b2, bullet_style),
+            Spacer(1, 0.08*inch),
+        ]))
     
     # Education
     story.append(Paragraph("EDUCATION", section_header_style))
@@ -227,16 +224,49 @@ def create_resume():
         body_style
     ))
     
+    # Technical Skills
+    story.append(Paragraph("TECHNICAL SKILLS", section_header_style))
+    skills_data = [
+        ["Frontend:", "React, Next.js, TypeScript, JavaScript, Tailwind CSS, Framer Motion"],
+        ["Backend:", "Node.js, PostgreSQL, Prisma, Redis, Socket.io, REST APIs"],
+        ["Tools:", "Git/GitHub, Docker, Vercel, Supabase, Firebase, Stripe API, AWS"],
+        ["Leadership:", "System Design, Microservices Architecture, AI APIs"],
+    ]
+    
+    skills_table = Table(skills_data, colWidths=[1.4*inch, 5.3*inch])
+    skills_table.setStyle(TableStyle([
+        ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+        ('FONTNAME', (0, 0), (0, -1), 'Helvetica-Bold'),
+        ('FONTSIZE', (0, 0), (-1, -1), 10),
+        ('BOTTOMPADDING', (0, 0), (-1, -1), 6),
+    ]))
+    story.append(skills_table)
+    
+    
+    # Languages
+    story.append(Paragraph("LANGUAGES", section_header_style))
+    story.append(Paragraph(
+        "French (Native), Swahili (Native), English (Professional)",
+        body_style
+    ))
+
+    # Portfolio
+    story.append(Paragraph("PORTFOLIO WEBSITE", section_header_style))
+    story.append(Paragraph(
+        '<a href="https://prefnavagheni-portfolio.vercel.app" color="#0A0A0A">prefnavagheni-portfolio.vercel.app</a>',
+        body_style
+    ))
+    
     # Footer
     story.append(Spacer(1, 0.15*inch))
     story.append(Paragraph(
-        "<i>Portfolio: prefnavagheni-portfolio.vercel.app | References available upon request</i>",
+        "<i>Portfolio: <a href='https://prefnavagheni-portfolio.vercel.app'>prefnavagheni-portfolio.vercel.app</a> | References available upon request</i>",
         ParagraphStyle('Footer', parent=body_style, fontSize=9, textColor=GRAY_COLOR, alignment=TA_CENTER)
     ))
     
-    # Build PDF
+    # Build
     doc.build(story)
-    print(f"✓ Resume PDF created successfully: {filename}")
+    print(f"✓ Updated Resume PDF created: {filename}")
     return filename
 
 if __name__ == "__main__":
