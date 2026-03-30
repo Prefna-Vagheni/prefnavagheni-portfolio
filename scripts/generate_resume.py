@@ -129,7 +129,7 @@ def create_resume():
     # Summary
     story.append(Paragraph("PROFESSIONAL SUMMARY", section_header_style))
     story.append(Paragraph(
-        "Full-stack developer building modern web applications using Next.js, React, and TypeScript on "
+        "5+ years Full-stack developer building modern web applications using Next.js, React, and TypeScript on "
         "the frontend, with Node.js, PostgreSQL, Prisma, and Redis on the backend. Built and deployed "
         "multiple full-stack SaaS-style applications with authentication, payments, background jobs, "
         "and AI integrations. Focused on scalable architectures, clean code, and building real-world"
